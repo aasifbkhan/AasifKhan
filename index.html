@@ -4,77 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
     <link rel="icon" href="images/favicon.jpg" type="image/gif">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/164c1f6f62.js" crossorigin="anonymous"></script>
     <title>Aasif Khan</title>
 </head>
 
 <body>
-    <div class="container text-center my-5">
-        <img class="shadow-lg bg-white rounded-circle" src="images/aasif.jpg" alt="" width="200px" height="200px">
-        <h1>Khan Aasif Bismillah</h1>
-        <p style="font-size: 22px;">Softeware Developer<br><u>YouTuber</u></p>
-    </div>
     <div class="container">
-        <div class="row my-2">
+        <div class="text-center my-2">
+            <img class="shadow-lg bg-white rounded-circle" src="images/aasif.jpg" alt="" width="300px" height="300px">
+            <h1>Khan Aasif Bismillah</h1>
+            <p style="font-size: 22px;">Softeware Developer<br><u>YouTuber</u></p>
+        </div>
+        <nav class="navbar sticky-top font-weight-bold navbar-expand-lg navbar-light shadow-lg" style="background-color:lightblue;">
+            <a class="navbar-brand">
+                <img src="images/favicon.jpg" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link mx-4" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a class="nav-item nav-link mx-4" href="#"><i class="fas fa-user"></i> About</a>
+                    <a class="nav-item nav-link mx-4" href="#"><i class="fas fa-project-diagram"></i> Projects</a>
+                    <a class="nav-item nav-link mx-4" href="#" tabindex="-1" aria-disabled="true"><i
+                            class="fas fa-phone-alt"></i> Contact</a>
+                    <a class="nav-item nav-link mx-4" href="resume/Aasif-Khan (5).pdf"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row my-5 ">
             <div class="col col-md-7">
-                <div class="card h-100 bg-dark" style="color:white;">
+                <div class="card border-0 h-100">
                     <div class="card-body">
-                        <h4 class="card-title">About Me</h4>
+                        <h4 class="card-title" style="font-size: 50px;">About Me</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Know About Me</h6>
-                        <p class="lead card-text">Hi..!, I'm Aasif Khan<br>And i'm a programmer, like to code and develop interesting stuff.<br>i like to travel while i'm listening music, like to watch movies, web series and video games.<br>I have my Technical Channel on YouTube its name <a href="https://www.youtube.com/channel/UCu9ugcF0c9dn3sirVo1EAGQ">CodingVines</a>, go and checkout the things.</p>
+                        <p class="lead card-text" style="font-size: 25px;">Hi..!, I'm Aasif Khan<br>And i'm a programmer, like to code and
+                            develop interesting stuff.<br>i like to travel while i'm listening music, like to watch
+                            movies, web series and video games.<br>I have my Technical Channel on YouTube its name <a
+                                href="https://www.youtube.com/channel/UCu9ugcF0c9dn3sirVo1EAGQ">CodingVines</a>, go and
+                            checkout the things.</p>
                     </div>
                 </div>
             </div>
-            <div class="col col-md-5">
-                <div class="card h-100 bg-light" style="height: 17rem;">
+            <div class="col col-md">
+                <img src="images/aboutus.gif" alt="" style="height: 20rem;">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col col-md-3">
+                <img src="images/education.gif" alt="" style="height: 15rem;">
+            </div>
+            <div class="col col-md">
+                <div class="card h-100 border-0 bg-light">
                     <div class="card-body">
-                        <h4 class="card-title">Skills</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Technical Skills</h6>
-                        <ul class="lead card-text">
-                            <li>Languages : Python, JavaScript, JAVA, C++.</li>
-                            <li>Frameworks : Django.</li>
-                            <li>WebTechnologies : HTML, CSS, Bootstrap.</li>
-                            <li>Database : MySQL, SQLlite.</li>
-                        </ul>
+                        <h4 class="card-title" style="font-size: 50px;">Education</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Bachelor Of Computer Application &emsp; 2015 -2018
+                        </h6>
+                        <p class="lead card-text" style="font-size: 25px;">Aki's Poona Collage of Arts, Science And Commerse, Savitri Bai Phule
+                            Pune University.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row my-2">
-            <div class="col">
-                <div class="card h-100 bg-dark" style=" color:white;">
+            <div class="col col-md-8">
+                <div class="card h-100 border-0">
                     <div class="card-body">
-                        <h4 class="card-title">Education</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Bachelor Of Computer Application &emsp; 2015 -2018</h6>
-                        <p class="lead card-text">Aki's Poona Collage of Arts, Science And Commerse, Savitri Bai Phule Pune University.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-2">
-            <div class="col col-md-5">
-                <div class="card h-100 bg-dark" style=" color:white;">
-                    <div class="card-body">
-                        <h4 class="card-title">Contact</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Contact me on</h6>
-                        <p class="lead card-text"><i class="fas fa-phone-alt"></i> +91 9921391609<br><i class="fas fa-envelope"></i> aasifbkhan98@gmail.com<br><i class="fas fa-map-marker-alt"></i><span style="font-size: 18px;"> 14/2/1 behind venkatesh classic nhavale nagar handewadi road hadapsar pune. 411 028</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-7">
-                <div class="card h-100 bg-light">
-                    <div class="card-body">
-                        <h4 class="card-title">Projects</h4>
+                        <h4 class="card-title" style="font-size: 50px;">Projects</h4>
                         <h6 class="card-subtitle mb-2 text-muted">My Projects</h6>
-                        <ul class="lead card-text">
-                            <li> Student Management System <a href="https://github.com/aasifbkhan/Student_Management_System.git"> Click Here </a>for code.</li>
-                            <li>Face & Emotions Detection <a href="https://github.com/aasifbkhan/Face-Emotions"> Click Here </a>for code.</li>
-                            <li>Voice Assistant <a href="https://www.instagram.com/p/B9XG3NbnMRR/">Video</a>.</li>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <img src="images/project.gif" alt="" style="height: 16rem;">  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-4">
+                <img src="images/contactus.jpg" alt="" style="height: 19rem;">
+            </div>
+            <div class="col col-md">
+                <div class="card h-100 border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: 50px;">Contact</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Contact me on</h6>
+                        <p class="lead card-text" style="font-size: 25px;"><i class="fas fa-phone-alt"></i> +91 9921391609<br><i
+                                class="fas fa-envelope"></i> aasifbkhan98@gmail.com<br><i
+                                class="fas fa-map-marker-alt"></i><span style="font-size: 18px;"> 14/2/1 behind
+                                venkatesh classic nhavale nagar handewadi road hadapsar pune. 411 028</span></p>
                     </div>
                 </div>
             </div>
@@ -83,8 +108,22 @@
     <footer class="text-center">
         <div class="my-5 h-100">
             &copy; Aasif Khan <br>
-            <span style="font-size: 35px;"><a href="https://github.com/aasifbkhan"><i class="fab fa-github" style="color: black;"></i></a> <a href="https://www.hackerrank.com/aasifbkhan98"><i class="fab fa-hackerrank" style="color: green;"></i></a> <a href="https://api.whatsapp.com/send?phone=+919921391609&text=*AasifKhan*%0AHello%20tell%20me%20your%20requirement%0A%0A"><i class="fab fa-whatsapp" style="color: chartreuse;"></i></a> <a href="https://www.facebook.com/profile.php?id=100006861964049"><i class="fab fa-facebook" style="color: blue;"></i></a> <a href="https://www.instagram.com/_im_abk/"><i class="fab fa-instagram" style="color:purple;"></i></a> <a href="https://twitter.com/im_abkhan"><i class="fab fa-twitter" style="color: skyblue;"></i></a> <a href="https://www.linkedin.com/in/aasif-khan-915677164/"><i class="fab fa-linkedin" style="color: steelblue;"></i></a> <a href="https://www.pinterest.ca/aasifbkhan98/"><i class="fab fa-pinterest" style="color: red;"></i></a> <a href="https://www.snapchat.com/add/aasifbkhan"><i class="fab fa-snapchat-ghost" style="color: yellow;"></i></a></span>
+            <span style="font-size: 35px;"><a href="https://github.com/aasifbkhan"><i class="fab fa-github"
+                        style="color: black;"></i></a> <a href="https://www.hackerrank.com/aasifbkhan98"><i
+                        class="fab fa-hackerrank" style="color: green;"></i></a> <a
+                    href="https://api.whatsapp.com/send?phone=+919921391609&text=*AasifKhan*%0AHello%20tell%20me%20your%20requirement%0A%0A"><i
+                        class="fab fa-whatsapp" style="color: chartreuse;"></i></a> <a
+                    href="https://www.facebook.com/profile.php?id=100006861964049"><i class="fab fa-facebook"
+                        style="color: blue;"></i></a> <a href="https://www.instagram.com/_im_abk/"><i
+                        class="fab fa-instagram" style="color:purple;"></i></a> <a
+                    href="https://twitter.com/im_abkhan"><i class="fab fa-twitter" style="color: skyblue;"></i></a> <a
+                    href="https://www.linkedin.com/in/aasif-khan-915677164/"><i class="fab fa-linkedin"
+                        style="color: steelblue;"></i></a> <a href="https://www.pinterest.ca/aasifbkhan98/"><i
+                        class="fab fa-pinterest" style="color: red;"></i></a> <a
+                    href="https://www.snapchat.com/add/aasifbkhan"><i class="fab fa-snapchat-ghost"
+                        style="color: yellow;"></i></a></span>
         </div>
     </footer>
 </body>
+
 </html>
