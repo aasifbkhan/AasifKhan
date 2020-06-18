@@ -1,4 +1,21 @@
+html {
+    scroll-behavior: smooth;
+} 
 body {
     font-family: 'Raleway';
-    /* background-image:url("../images/3325193.jpg"); */
+    background-image:url("../images/bodybg.jpg");
+    /* background-color: cornflowerblue; */
+}
+.transparent{
+    background-color: transparent;
+}
+.profile{
+    background-image: url("../images/divbg.jpg");
+}
+footer{
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
 }

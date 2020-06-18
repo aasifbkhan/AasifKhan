@@ -12,116 +12,152 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/164c1f6f62.js" crossorigin="anonymous"></script>
     <title>Aasif Khan</title>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 400) {
+                    $(".transparent").css("background-image", "url('images/navbg.jpg')");
+                }
+
+                else {
+                    $(".transparent").css("background", "transparent");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center my-2">
-            <img class="shadow-lg bg-white rounded-circle" src="images/aasif.jpg" alt="" width="300px" height="300px">
+    <div class="container profile">
+        <div class="text-center my-2" style="color: white;">
+            <img class="shadow-lg rounded-circle" src="images/aasif.jpg" alt="" width="300px" height="300px">
             <h1>Khan Aasif Bismillah</h1>
-            <p style="font-size: 22px;">Softeware Developer<br><u>YouTuber</u></p>
+            <p style="font-size: 22px;">Softeware Developer<br>YouTuber</p>
         </div>
-        <nav class="navbar sticky-top font-weight-bold navbar-expand-lg navbar-light shadow-lg" style="background-color:lightblue;">
+        <hr style="width: 75px; background-color: white;">
+        <nav class="navbar font-weight-bold navbar-expand-lg navbar-dark sticky-top transparent">
             <a class="navbar-brand">
                 <img src="images/favicon.jpg" width="30" height="30" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-ellipsis-h"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link mx-4" href="index.html"><i class="fas fa-home"></i> Home</a>
-                    <a class="nav-item nav-link mx-4" href="#"><i class="fas fa-user"></i> About</a>
-                    <a class="nav-item nav-link mx-4" href="#"><i class="fas fa-project-diagram"></i> Projects</a>
-                    <a class="nav-item nav-link mx-4" href="#" tabindex="-1" aria-disabled="true"><i
-                            class="fas fa-phone-alt"></i> Contact</a>
-                    <a class="nav-item nav-link mx-4" href="resume/Aasif-Khan (5).pdf"><i class="fas fa-download"></i> Download Resume</a>
+                    <a class="nav-item nav-link mx-4 text-center" href="index.html"><i class="fas fa-home"></i><br>Home
+                        <hr style="width: 45px; background-color: white;"></a>
+                    <a class="nav-item nav-link mx-4 text-center" href="#aboutus" id="about"><i
+                            class="fas fa-user"></i><br>About
+                        <hr style="width: 45px; background-color: white;"></a>
+                    <a class="nav-item nav-link mx-4 text-center" href="#project"><i
+                            class="fas fa-project-diagram"></i><br>Projects
+                        <hr style="width: 45px; background-color: white;"></a>
+                    <a class="nav-item nav-link mx-4 text-center" href="#contact" tabindex="-1" aria-disabled="true"><i
+                            class="fas fa-phone-alt"></i><br>Contact
+                        <hr style="width: 45px; background-color: white;"></a>
+                    <a class="nav-item nav-link mx-4 text-center" href="resume/Aasif-Khan (5).pdf"><i
+                            class="fas fa-download"></i>
+                        <br>Download Resume
+                        <hr style="width: 100px; background-color: white;"></a>
                 </div>
             </div>
         </nav>
-        <div class="row my-5 ">
-            <div class="col col-md-7">
-                <div class="card border-0 h-100">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 50px;">About Me</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Know About Me</h6>
-                        <p class="lead card-text" style="font-size: 25px;">Hi..!, I'm Aasif Khan<br>And i'm a programmer, like to code and
-                            develop interesting stuff.<br>i like to travel while i'm listening music, like to watch
-                            movies, web series and video games.<br>I have my Technical Channel on YouTube its name <a
-                                href="https://www.youtube.com/channel/UCu9ugcF0c9dn3sirVo1EAGQ">CodingVines</a>, go and
-                            checkout the things.</p>
+
+        <div class="bg-white">
+            <section>
+                <div class="main row my-5" id="aboutus">
+                    <div class="col col-md-8">
+                        <div class="card border-0 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-size: 50px;">About Me</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">Know About Me</h6>
+                                <p class="lead card-text" style="font-size: 25px;">Hi..!, I'm Aasif Khan<br>And i'm a
+                                    programmer, like to code and
+                                    develop interesting stuff.<br>i like to travel while i'm listening music, like to
+                                    watch
+                                    movies, web series and video games.<br>I have my Technical Channel on YouTube its
+                                    name
+                                    <a href="https://www.youtube.com/channel/UCu9ugcF0c9dn3sirVo1EAGQ">CodingVines</a>,
+                                    go
+                                    and
+                                    checkout the things.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md">
+                        <img src="images/aboutus.gif" alt="" style="height: 16rem;">
+                    </div>
+                </div>
+            </section>
+            <div class="row mb-5">
+                <div class="col col-md-3">
+                    <img src="images/education.gif" alt="" style="height: 15rem;">
+                </div>
+                <div class="col col-md">
+                    <div class="card h-100 border-0 bg-light">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-size: 50px;">Education</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Bachelor Of Computer Application &emsp; 2015 -2018
+                            </h6>
+                            <p class="lead card-text" style="font-size: 25px;">Aki's Poona Collage of Arts, Science And
+                                Commerse, Savitri Bai Phule
+                                Pune University.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col col-md">
-                <img src="images/aboutus.gif" alt="" style="height: 20rem;">
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col col-md-3">
-                <img src="images/education.gif" alt="" style="height: 15rem;">
-            </div>
-            <div class="col col-md">
-                <div class="card h-100 border-0 bg-light">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 50px;">Education</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Bachelor Of Computer Application &emsp; 2015 -2018
-                        </h6>
-                        <p class="lead card-text" style="font-size: 25px;">Aki's Poona Collage of Arts, Science And Commerse, Savitri Bai Phule
-                            Pune University.</p>
+            <div class="row my-2" id="project">
+                <div class="col col-md-8">
+                    <div class="card h-100 border-0">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-size: 50px;">Projects</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">My Projects</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row my-2">
-            <div class="col col-md-8">
-                <div class="card h-100 border-0">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 50px;">Projects</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">My Projects</h6>
-                    </div>
+                <div class="col col-md-4">
+                    <img src="images/project.gif" alt="" style="height: 16rem;">
                 </div>
             </div>
-            <div class="col col-md-4">
-                <img src="images/project.gif" alt="" style="height: 16rem;">  
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-4">
-                <img src="images/contactus.jpg" alt="" style="height: 19rem;">
-            </div>
-            <div class="col col-md">
-                <div class="card h-100 border-0 bg-light">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 50px;">Contact</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Contact me on</h6>
-                        <p class="lead card-text" style="font-size: 25px;"><i class="fas fa-phone-alt"></i> +91 9921391609<br><i
-                                class="fas fa-envelope"></i> aasifbkhan98@gmail.com<br><i
-                                class="fas fa-map-marker-alt"></i><span style="font-size: 18px;"> 14/2/1 behind
-                                venkatesh classic nhavale nagar handewadi road hadapsar pune. 411 028</span></p>
+            <div class="row" id="contact">
+                <div class="col col-md-4">
+                    <img src="images/contactus.jpg" alt="" style="height: 19rem;">
+                </div>
+                <div class="col col-md">
+                    <div class="card h-100 border-0 bg-light">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-size: 50px;">Contact</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Contact me on</h6>
+                            <p class="lead card-text" style="font-size: 25px;"><i class="fas fa-phone-alt"></i> +91
+                                9921391609<br><i class="fas fa-envelope"></i> aasifbkhan98@gmail.com<br><i
+                                    class="fas fa-map-marker-alt"></i>14/2/1 behind
+                                venkatesh classic nhavale nagar handewadi road hadapsar pune. 411 028.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="text-center">
+    <footer>
         <div class="my-5 h-100">
-            &copy; Aasif Khan <br>
+            <span style="color:gray">&copy; Aasif Khan</span><br>
             <span style="font-size: 35px;"><a href="https://github.com/aasifbkhan"><i class="fab fa-github"
-                        style="color: black;"></i></a> <a href="https://www.hackerrank.com/aasifbkhan98"><i
-                        class="fab fa-hackerrank" style="color: green;"></i></a> <a
+                style="color:gray;"></i></a> <a href="https://www.hackerrank.com/aasifbkhan98"><i
+                        class="fab fa-hackerrank" style="color:gray;"></i></a> <a
                     href="https://api.whatsapp.com/send?phone=+919921391609&text=*AasifKhan*%0AHello%20tell%20me%20your%20requirement%0A%0A"><i
-                        class="fab fa-whatsapp" style="color: chartreuse;"></i></a> <a
+                        class="fab fa-whatsapp" style="color:gray;"></i></a> <a
                     href="https://www.facebook.com/profile.php?id=100006861964049"><i class="fab fa-facebook"
-                        style="color: blue;"></i></a> <a href="https://www.instagram.com/_im_abk/"><i
-                        class="fab fa-instagram" style="color:purple;"></i></a> <a
-                    href="https://twitter.com/im_abkhan"><i class="fab fa-twitter" style="color: skyblue;"></i></a> <a
+                    style="color:gray;"></i></a> <a href="https://www.instagram.com/_im_abk/"><i
+                        class="fab fa-instagram" style="color:gray;"></i></a> <a
+                    href="https://twitter.com/im_abkhan"><i class="fab fa-twitter" style="color:gray;"></i></a> <a
                     href="https://www.linkedin.com/in/aasif-khan-915677164/"><i class="fab fa-linkedin"
-                        style="color: steelblue;"></i></a> <a href="https://www.pinterest.ca/aasifbkhan98/"><i
-                        class="fab fa-pinterest" style="color: red;"></i></a> <a
+                    style="color:gray;"></i></a> <a href="https://www.pinterest.ca/aasifbkhan98/"><i
+                        class="fab fa-pinterest" style="color:gray;"></i></a> <a
                     href="https://www.snapchat.com/add/aasifbkhan"><i class="fab fa-snapchat-ghost"
-                        style="color: yellow;"></i></a></span>
+                    style="color:gray;"></i></a></span>
         </div>
     </footer>
 </body>
