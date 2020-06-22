@@ -23,8 +23,38 @@
                 else {
                     $(".transparent").css("background", "transparent");
                 }
-            })
-        })
+            });
+            $("#img").mouseover(function () {
+                $("#p1").html("<h5 class='text-center mt-2 font-weight-bold'>Voice Assistant</h5>");
+            });
+            $("#img").mouseout(function () {
+                $("#p1").empty();
+            });
+            $("#img1").mouseover(function () {
+                $("#p2").html("<h5 class='text-center mt-2 font-weight-bold'>Face & Emotions Recognition</h5");
+            });
+            $("#img1").mouseout(function () {
+                $("#p2").empty();
+            });
+            $("#img2").mouseover(function () {
+                $("#p3").html("<h5 class='text-center mt-2 font-weight-bold'>Tulip-CRM</h5>");
+            });
+            $("#img2").mouseout(function () {
+                $("#p3").empty();
+            });
+            $("#img3").mouseover(function () {
+                $("#p4").html("<h5 class='text-center mt-2 font-weight-bold'>Portfolio</h5>");
+            });
+            $("#img3").mouseout(function () {
+                $("#p4").empty();
+            });
+            $("#img4").mouseover(function () {
+                $("#p5").html("<h5 class='text-center mt-2 font-weight-bold'>Student Managment System</h5>");
+            });
+            $("#img4").mouseout(function () {
+                $("#p5").empty();
+            });
+        });
     </script>
 </head>
 
@@ -47,21 +77,32 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link mx-4 text-center" href="index.html"><i class="fas fa-home"></i><br>Home
-                        <hr style="width: 45px; background-color: gray;"></a>
-                    <a class="nav-item nav-link mx-4 text-center" href="#aboutus" id="about"><i
-                            class="fas fa-user"></i><br>About
-                        <hr style="width: 45px; background-color: gray;"></a>
-                    <a class="nav-item nav-link mx-4 text-center" href="#project"><i
-                            class="fas fa-project-diagram"></i><br>Projects
-                        <hr style="width: 45px; background-color: gray;"></a>
-                    <a class="nav-item nav-link mx-4 text-center" href="#contact" tabindex="-1" aria-disabled="true"><i
-                            class="fas fa-phone-alt"></i><br>Contact
-                        <hr style="width: 45px; background-color: gray;"></a>
-                    <a class="nav-item nav-link mx-4 text-center" href="resume/Aasif-Khan (5).pdf"><i
-                            class="fas fa-download"></i>
-                        <br>Download Resume
-                        <hr style="width: 100px; background-color: gray;"></a>
+                    <div class="zoom">
+                        <a class="nav-item nav-link mx-4 text-center" href="index.html"><i
+                                class="fas fa-home"></i><br>Home
+                            <hr style="width: 45px; background-color: gray;"></a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link mx-4 text-center" href="#aboutus" id="about"><i
+                                class="fas fa-user"></i><br>About
+                            <hr style="width: 45px; background-color: gray;"></a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link mx-4 text-center" href="#project"><i
+                                class="fas fa-project-diagram"></i><br>Projects
+                            <hr style="width: 45px; background-color: gray;"></a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link mx-4 text-center" href="#contact" tabindex="-1"
+                            aria-disabled="true"><i class="fas fa-phone-alt"></i><br>Contact
+                            <hr style="width: 45px; background-color: gray;"></a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link mx-4 text-center" href="resume/Aasif-Khan (5).pdf"><i
+                                class="fas fa-download"></i>
+                            <br>Download Resume
+                            <hr style="width: 100px; background-color: gray;"></a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -92,28 +133,52 @@
             <h6 class="mb-2 text-muted">Technical Skills</h6>
             <div class="row">
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg" src="images/icons8-python-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">Python<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg" src="images/icons8-python-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">Python
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg bg-white" src="images/icons8-django-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">Django<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg bg-white" src="images/icons8-django-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">Django
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg" src="images/icons8-javascript-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">JavaScript<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg" src="images/icons8-javascript-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">JavaScript
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg" src="images/icons8-bootstrap-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">Bootstrap<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg" src="images/icons8-bootstrap-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">Bootstrap
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg" src="images/icons8-css3-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">CSS<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg" src="images/icons8-css3-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">CSS
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
                 <div class="col col-md-2 text-center ">
-                    <img class="rounded-lg" src="images/icons8-html-5-50.png" alt="">
-                    <h5 class="mt-2 font-weight-bold" style=" color: white;">HTML<hr style="width: 20%; background-color: gray;"></h5>
+                    <div class="zoom">
+                        <img class="rounded-lg" src="images/icons8-html-5-50.png" alt="">
+                        <h5 class="mt-2 font-weight-bold" style=" color: white;">HTML
+                            <hr style="width: 20%; background-color: gray;">
+                        </h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,31 +205,51 @@
             <h6 class="mb-2 text-muted">Know About Me</h6>
             <div class="row">
                 <div class="col">
-                    <img class="rounded-lg" src="images/project/voice-recognition.jpg" alt=""
-                        style="width: 350px; height: 225px;">
-                    <h5 class="text-center mt-2 font-weight-bold" style=" color: white;">Voice Assistant
-                        <hr style="width: 100%; background-color: gray;"></h5>
+                    <div class="zoom mt-2" id="img">
+                        <a href=""><img id="pimg" class="rounded-lg" src="images/project/voice-recognition.jpg" alt=""
+                            style="width: 350px; height: 225px;">
+                        
+                            <div class="centered" id="p1"></div>
+                        </a>
+                        <hr style="width: 350px; background-color: gray;">
+
+                    </div>
                 </div>
                 <div class="col">
-                    <img class="rounded-lg" src="images/project/facial-recognition.jpg" alt=""
-                        style="width: 350px; height: 225px;">
-                    <h5 class="text-center mt-2 font-weight-bold" style=" color: white;">Face & Emotions Recognition
-                        <hr style="width: 100%; background-color: gray;"></h5>
+                    <div class="zoom mt-2" id="img1">
+                        <a href=""><img class="rounded-lg" src="images/project/facial-recognition.jpg" alt=""
+                            style="width: 350px; height: 225px;">
+                            <div class="centered" id="p2"></div>
+                        </a>
+                        <hr style="width: 350px; background-color: gray;">
+                    </div>
                 </div>
                 <div class="col">
-                    <img class="rounded-lg" src="images/project/task.png" alt="" style="width: 350px; height: 225px;">
-                    <h5 class="text-center mt-2 font-weight-bold" style=" color: white;">Tulip-CRM
-                        <hr style="width: 100%; background-color: gray;"></h5>
+                    <div class="zoom mt-2" id="img2">
+                        <a href=""><img class="rounded-lg" src="images/project/task.png" alt=""
+                            style="width: 350px; height: 225px;">
+                            <div class="centered" id="p3"></div>
+                        </a>
+                        <hr style="width: 350px; background-color: gray;">
+                    </div>
                 </div>
                 <div class="col text-center ">
-                    <img class="rounded-lg" src="images/project/result_host.JPG" alt="" style="width: 350px; height: 225px;">
-                    <h5 class="text-center mt-2 font-weight-bold" style=" color: white;">Portfolio
-                        <hr style="width: 100%; background-color: gray;"></h5>
+                    <div class="zoom mt-2" id="img3">
+                        <a href=""><img class="rounded-lg" src="images/project/result_host.JPG" alt=""
+                            style="width: 350px; height: 225px;">
+                            <div class="centered" id="p4"></div>
+                        </a>
+                        <hr style="width: 350px; background-color: gray;">
+                    </div>
                 </div>
-                <div class="col text-center ">
-                    <img class="rounded-lg" src="images/project/sms.png" alt="" style="width: 350px; height: 225px;">
-                    <h5 class="text-center mt-2 font-weight-bold" style=" color: white;">Student Managment System
-                        <hr style="width: 100%; background-color: gray;"></h5>
+                <div class="col text-center " id="img4">
+                    <div class="zoom mt-2">
+                        <a href=""><img class="rounded-lg" src="images/project/sms.png" alt=""
+                            style="width: 350px; height: 225px;">
+                            <div class="centered" id="p5"></div>
+                        </a>
+                        <hr style="width: 350px; background-color: gray;">
+                    </div>
                 </div>
             </div>
         </div>

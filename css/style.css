@@ -45,6 +45,21 @@ body {
       opacity: 0;
     }
 }
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover{
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(51, 49, 49);
+  transform: translate(-50%, -50%);
+}
 .bottom-text{
   position: absolute; 
   bottom: 0px;
