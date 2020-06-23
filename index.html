@@ -54,6 +54,14 @@
             $("#img4").mouseout(function () {
                 $("#p5").empty();
             });
+            $('#modal-close-movie').click(function () {
+                $('.modal-background-movie').fadeOut();
+                $('#modal-video')[0].pause();
+            });
+            $('#modal-close-movie1').click(function () {
+                $('.modal-background-movie').fadeOut();
+                $('#modal-video1')[0].pause();
+            });
         });
     </script>
 </head>
@@ -206,50 +214,170 @@
             <div class="row">
                 <div class="col">
                     <div class="zoom mt-2" id="img">
-                        <a href=""><img id="pimg" class="rounded-lg" src="images/project/voice-recognition.jpg" alt=""
-                            style="width: 350px; height: 225px;">
-                        
+                        <a data-toggle="modal" data-target="#exampleModalCenter" href=""><img id="pimg"
+                                class="rounded-lg" src="images/project/voice-recognition.jpg" alt=""
+                                style="width: 350px; height: 225px;">
+
                             <div class="centered" id="p1"></div>
                         </a>
                         <hr style="width: 350px; background-color: gray;">
-
                     </div>
+
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Mini Virtual Assistant</h5>
+                                    <button type="button" id="modal-close-movie" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col col-md-7">
+                                            <video id="modal-video"
+                                                src="videos/_abksoftech_s Instagram profile post_ _Speech Reco(MP4).mp4"
+                                                width="100%" height="auto" controls></video>
+                                        </div>
+                                        <div class="col col-md">
+                                            <h2>Voice Assistant</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col">
                     <div class="zoom mt-2" id="img1">
-                        <a href=""><img class="rounded-lg" src="images/project/facial-recognition.jpg" alt=""
-                            style="width: 350px; height: 225px;">
+                        <a data-toggle="modal" data-target="#exampleModalCenter1" href=""><img class="rounded-lg"
+                                src="images/project/facial-recognition.jpg" alt="" style="width: 350px; height: 225px;">
                             <div class="centered" id="p2"></div>
                         </a>
                         <hr style="width: 350px; background-color: gray;">
                     </div>
+
+                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">facial-recognition program</h5>
+                                    <button type="button" id="modal-close-movie1" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col col-md-7">
+                                            <video id="modal-video1"
+                                                src="videos/_abksoftech on Instagram_ _This Baby Neural Networ(MP4).mp4"
+                                                width="100%" height="auto" controls></video>
+                                        </div>
+                                        <div class="col col-md">
+                                            <h2>Face & Emotion Recognition</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col">
                     <div class="zoom mt-2" id="img2">
-                        <a href=""><img class="rounded-lg" src="images/project/task.png" alt=""
-                            style="width: 350px; height: 225px;">
+                        <a data-toggle="modal" data-target="#exampleModalCenter2" href=""><img class="rounded-lg"
+                                src="images/project/task.png" alt="" style="width: 350px; height: 225px;">
                             <div class="centered" id="p3"></div>
                         </a>
                         <hr style="width: 350px; background-color: gray;">
                     </div>
+
+                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Tulip-CRM</h5>
+                                    <button type="button" id="modal-close-movie2" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/project/task.png" style="width: 48rem; height: 20rem;" alt="">
+                                    <h2>Tulip-CRM Web Application</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col text-center ">
                     <div class="zoom mt-2" id="img3">
-                        <a href=""><img class="rounded-lg" src="images/project/result_host.JPG" alt=""
-                            style="width: 350px; height: 225px;">
+                        <a data-toggle="modal" data-target="#exampleModalCenter3" href=""><img class="rounded-lg"
+                                src="images/project/result_host.JPG" alt="" style="width: 350px; height: 225px;">
                             <div class="centered" id="p4"></div>
                         </a>
                         <hr style="width: 350px; background-color: gray;">
                     </div>
+
+                    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Portfolio</h5>
+                                    <button type="button" id="modal-close-movie3" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/project/result_host.JPG" style="width: 48rem; height: 20rem;" alt="">
+                                    <h2>My Portfolio it was hosted on AWS Cloud.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col text-center " id="img4">
                     <div class="zoom mt-2">
-                        <a href=""><img class="rounded-lg" src="images/project/sms.png" alt=""
-                            style="width: 350px; height: 225px;">
+                        <a data-toggle="modal" data-target="#exampleModalCenter4" href=""><img class="rounded-lg"
+                                src="images/project/sms.png" alt="" style="width: 350px; height: 225px;">
                             <div class="centered" id="p5"></div>
                         </a>
                         <hr style="width: 350px; background-color: gray;">
                     </div>
+
+                    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Student Managment System</h5>
+                                    <button type="button" id="modal-close-movie4" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/project/sms.png" style="width: 48rem; height: 20rem;" alt="">
+                                    <h2>Student Managment System</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal"
+                                        id="modal-close-movie">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
