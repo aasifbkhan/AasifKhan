@@ -106,7 +106,7 @@
                             <hr style="width: 45px; background-color: gray;"></a>
                     </div>
                     <div class="zoom">
-                        <a class="nav-item nav-link mx-4 text-center" href="resume/Aasif-Khan (5).pdf"><i
+                        <a data-toggle="modal" data-target="#resume" class="nav-item nav-link mx-4 text-center" href=""><i
                                 class="fas fa-download"></i>
                             <br>Download Resume
                             <hr style="width: 100px; background-color: gray;"></a>
@@ -114,6 +114,33 @@
                 </div>
             </div>
         </nav>
+
+        <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">My Resume
+                        </h5>
+                        <button type="button" id="modal-close-movie4" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="resume/Aasif-Khan (5).pdf"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-success" href="resume/Aasif-Khan (5).pdf" download="Aasif_Khan_Resume.pdf"><i
+                            class="fas fa-download"></i> Download</a>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal" id="modal-close-movie">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <hr style="width: 100%; background-color: gray;">
         <div class="main row my-5" id="aboutus">
             <div class="col col-md">
@@ -338,7 +365,8 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="images/project/result_host.JPG" style="width: 48rem; height: 20rem;" alt="">
+                                    <img src="images/project/result_host.JPG" style="width: 48rem; height: 20rem;"
+                                        alt="">
                                     <h2>My Portfolio it was hosted on AWS Cloud.</h2>
                                 </div>
                             </div>
